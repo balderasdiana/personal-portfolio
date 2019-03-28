@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+@import url('https://fonts.googleapis.com/css?family=Lato:100');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600i');
+body {
+  colour: #000;
+}
+
+nav {
+  z-index: 1;
+  position: fixed;
+  right: 0;
+}
+
+article {
+  padding: 1% 7% 3% 7%;
+}
+
+h1 {
+  color: #eee;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 110px;
+  
+  /*reset margin*/
+  margin: 30;
+}
+
+
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  /*reset margin*/
+}
+
+h2 {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 100px;
+}
+
+.subtitle {
+ padding-bottom: 10em;
+ font-size: 30px;
+ color: white;
+ font-family: 'Open Sans', sans-serif;
+}
+
+.resource {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: #669999;
+}
+
+.quote {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+i {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  /*reset margin*/  
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+li {
+  display: inline-block;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+li:hover .fa-home {
+  color: #00ffff;
+}
+
+li:hover .fa-quote-right {
+  color: #00ff7f;
+}
+
+li:hover .fa-code {
+  color: #ffdd00;
+}
+
+li:hover .fa-send {
+  color: #ff00ff;
+}
+
+li:hover .fa-share-alt {
+  color: #ff4500;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+a:hover {
+  color: #337ab7;
+}
+
+a:hover i {
+  color: #337ab7;
+}
+
+
+/* id's */
+
+/* main nav */
+
+.main-nav {
+  text-align: right;
+  padding: 0;
+  width: 50px;
+  float: right;
+  background-color: rgba(125, 125, 125, 0.2);
+  border-radius: 0px 0px 0px 10px;
+}
+
+.main-nav ul {
+  float: right;
+}
+
+#home {
+  
+  background-size: cover;
+  width: auto;
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+#home a:hover i {
+  color: #fff;
+}
+
+#about {
+ 
+  background-size: cover;
+  width: auto;
+  min-height: 100vh;
+  background-color: #e2cdc0;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+#about .imglink {
+  float:right;
+}
+
+
+
+#portfolio {
+  
+  background-size: cover;
+  width: auto;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+#portfolio .imglink a {
+  padding: 0 8px 0 0;
+}
+
+#contact {
+  position: relative;
+  background-size: cover;
+  width: auto;
+  min-height: 100vh;
+  background-color: #d5dae2;
+}
+
+/* classes */
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.container {
+  display:inline-block;
+  max-width:80%;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.center {
+  display:inline-block;
+  margin:0 auto;
+}
+
+.left {
+  display: inline-block;
+  width: 45%;
+}
+
+.facts {
+  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.right {
+  display: inline-block;
+  width: 45%;
+  float: right;
+}
+
+.clear:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.bottom li {
+  font-size: 1em;
+}
+
+.bottom li a {
+  padding: 0 8px 0 0;
+}
+
+.imglink {
+  display:inline-block;
+}
+
+
+
+.author {
+  font-size: 15px;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.icon,ion-heart {
+  color: #ff9999;
+}
+
+
+
+.imglink a:hover {
+  -webkit-filter: drop-shadow(0px 0px 15px rgba(225, 225, 225, 1));
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 6em;
+  }
+  li {
+    display: list-item;
+  }
+  #contact article li {
+    display: inline-block;
+  }
+  .left {
+    display: block;
+    width: 100%;
+  }
+  .right {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* to do
+min-width: 480px (because the original iphones in landscape were this size)
+min-width: 768px (because ipads and most tablets are this size in portrait)
+min-width: 1024px (because ipads in landscape are this size)
+min-width: 1280px (because the average desktop screen is this size or bigger)
+*/
